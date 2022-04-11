@@ -89,7 +89,7 @@ let generatePage = (data) => {
     <body>
         <header>
             <nav class="navbar" id="navbar">
-                <span class="navbar-brand text-center" id="navbar-text">Profile</span>
+                <span class="navbar-brand text-center" id="navbar-text">Team</span>
             </nav>
         </header>
         <main>
