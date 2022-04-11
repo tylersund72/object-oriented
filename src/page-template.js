@@ -50,7 +50,32 @@ let internCard = function (intern) {
       `;
 };
 
-module.exports = (employees) => {
+initiateHTML = (data) => {
+  const cards = [];
+
+  cards.push(
+    data
+      .filter((employee) => employee.getRole() === "Manager")
+      .map((manager) => managerCard(manager))
+  );
+
+  cards.push(
+    data
+      .filter((employee) => employee.getRole() === "Engineer")
+      .map((engineer) => engineerCard(engineer))
+  );
+
+  cards.push(
+    data
+      .filter((employee) => employee.getRole() === "Intern")
+      .map((intern) => internCard(intern))
+  );
+
+  console.log(cards);
+  return cards.join("");
+};
+
+let generatePage = (data) => {
   return `
     <!DOCTYPE html>
     <html lang="en">
@@ -71,9 +96,7 @@ module.exports = (employees) => {
             <div class="container">
                 <div class="row justify-content-center" id="team-cards">
                   <!--Team Cards-->
-                    ${managerCard(employees)}
-                    ${engineerCard(employees)}  
-                    ${internCard(employees)}              
+                    ${initiateHTML(data)}
                 </div>
           </div>
         </main>
@@ -86,3 +109,5 @@ module.exports = (employees) => {
   </html>
     `;
 };
+
+module.exports = generatePage;
