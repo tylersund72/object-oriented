@@ -1,0 +1,28 @@
+{
+  "name": "team-portfolio-generator",
+  "version": "1.0.0",
+  "description": "team generator",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tylersund72/team-portfolio-generator.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tylersund72/team-portfolio-generator/issues"
+  },
+  "homepage": "https://github.com/tylersund72/team-portfolio-generator#readme",
+  "dependencies": {
+    "inquirer": "^8.2.2"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
