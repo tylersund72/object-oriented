@@ -21,7 +21,7 @@ let engineerCard = function (engineer) {
           <div class="card">
               <div class="card-header">
                   <h4>${engineer.name}</h4>
-                  <h2>Manager</h2>
+                  <h2>Engineer</h2>
               </div>
               <div class="card-body">
                 <p class="id">ID = ${engineer.id}</p>
@@ -38,7 +38,7 @@ let internCard = function (intern) {
           <div class="card">
               <div class="card-header">
                   <h4>${intern.name}</h4>
-                  <h2>Manager</h2>
+                  <h2>Intern</h2>
               </div>
               <div class="card-body">
                 <p class="id">ID = ${intern.id}</p>
