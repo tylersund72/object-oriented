@@ -7,11 +7,11 @@ let managerCard = function (manager) {
                 <h3>Manager</h3>
             </div>
             <div class="card-body">
-            <p class="id">ID = ${manager.id}</p>
-            <p class="email">Email = <a href="mailto:${manager.email}">${manager.email}</a></p>
-            <p class="officeNumber">Office Number = ${manager.officeNumber}</p>
-        </div>
-    </div>
+              <p class="id">ID = ${manager.id}</p>
+              <p class="email">Email = <a href="mailto:${manager.email}">${manager.email}</a></p>
+              <p class="officeNumber">Office Number = ${manager.officeNumber}</p>
+          </div>
+      </div>
     </div>
     `;
 };
@@ -20,15 +20,15 @@ let engineerCard = function (engineer) {
       <div class="col">
           <div class="card">
               <div class="card-header">
-                  <h3>${engineer.name}</h3>
-                  <h3>Manager</h3>
+                  <h4>${engineer.name}</h4>
+                  <h2>Manager</h2>
               </div>
               <div class="card-body">
-              <p class="id">ID = ${engineer.id}</p>
-              <p class="email">Email = <a href="mailto:${engineer.email}">${engineer.email}</a></p>
-              <p class="github">GitHub Username = <a target="_blank" href="https://github.com/${engineer.github}">${engineer.github}</a></p>
-          </div>
-      </div>
+                <p class="id">ID = ${engineer.id}</p>
+                <p class="email">Email = <a href="mailto:${engineer.email}">${engineer.email}</a></p>
+                <p class="github">GitHub Username = <a target="_blank" href="https://github.com/${engineer.github}">${engineer.github}</a></p>
+           </div>
+       </div>
       </div>
       `;
 };
@@ -37,15 +37,15 @@ let internCard = function (intern) {
       <div class="col">
           <div class="card">
               <div class="card-header">
-                  <h3>${intern.name}</h3>
-                  <h3>Manager</h3>
+                  <h4>${intern.name}</h4>
+                  <h2>Manager</h2>
               </div>
               <div class="card-body">
-              <p class="id">ID = ${intern.id}</p>
-              <p class="email">Email = <a href="mailto:${intern.email}">${intern.email}</a></p>
-              <p class="school">School = ${intern.school}</p>
-          </div>
-      </div>
+                <p class="id">ID = ${intern.id}</p>
+                <p class="email">Email = <a href="mailto:${intern.email}">${intern.email}</a></p>
+                <p class="school">School = ${intern.school}</p>
+            </div>
+        </div>
       </div>
       `;
 };
@@ -95,7 +95,6 @@ let generatePage = (data) => {
         <main>
             <div class="container">
                 <div class="row justify-content-center" id="team-cards">
-                  <!--Team Cards-->
                     ${initiateHTML(data)}
                 </div>
           </div>
